@@ -1,0 +1,102 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #282c34;
+  color: white;
+  height: 50px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.top-autocomplete, .control-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#calculate {
+  background-color: #61dafb;
+  color: white;
+}
+
+#reset {
+  background-color: #ccc;
+  color: black;
+}
+
+.map-container {
+  position: relative; /* This allows absolute positioning relative to this container */
+  width: calc(100% - 100px); /* Adjust width based on padding */
+  height: 500px; /* Adjust height as needed */
+  margin: 20px auto;
+  background-color: #e9e9e9; /* Placeholder for the map */
+}
+
+.map {
+  position: absolute; /* Absolute position the map */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* Ensure the map covers the full width */
+  height: 100%; /* Ensure the map covers the full height */
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.view-distance {
+  background-color: red;
+  color: white;
+}
